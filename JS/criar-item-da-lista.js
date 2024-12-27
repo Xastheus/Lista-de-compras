@@ -127,14 +127,13 @@ export function carregarItensDoLocalStorage() {
         itemDaLista.querySelector(".checkbox-customizado").classList.add("checked");
         itemDaLista.querySelector("#item-titulo").style.textDecoration = "line-through";
     });
-    verificarListaVazia(listaDeCompras);
+    verificarListaVazia(listaDeCompras, listaComprados);
     verificarListaComprados(listaComprados);
     salvarNoLocalStorage(listaDeCompras, listaComprados);
 }
 
 // Inicializa o carregamento ao carregar a página
 document.addEventListener("DOMContentLoaded", carregarItensDoLocalStorage);
-
 
 
 
