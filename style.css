@@ -70,6 +70,7 @@ input {
     border-radius: 10px;
     height: 2.5em;
     font-family: var(--fonte-titulo);
+    color: var(--preto);
 }
 
 .adicionados {
