@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --fonte-titulo: "Poppins", sans-serif;
+    --fonte-texto: "Lato", sans-serif;
+    --card-cor: #D9EAFD;
+    --rosa: #E8C5E5;
+    --branco: #fff;
+    --preto: #000;
+    --verde: #95D2B3;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carrinho {
+    display: flex;
+    justify-self: center;
+    width: 50%;
+}
+
+.card { 
+    background-color: var(--card-cor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    border-radius: 16px;
+    gap: 12px;
+    height: 10em;
+    padding-top: 2em;
+}
+
+.titulo {
+    font-family:var(--fonte-titulo);
+    font-weight: 200;
+}
+
+.paragrafo {
+    font-family: var(--fonte-texto);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+}
+
+input {
+    height: 2.5em;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.botao-adicionar {
+    align-self: center;
+    width: 55%;
+    background-color: var(--rosa);
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    height: 2.5em;
+    font-family: var(--fonte-titulo);
+}
+
+.adicionados {
+    text-align: center;
+}
+
+#lista-adicionados {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.mensagem-vazia {
+    font-family: var(--fonte-texto);
+    text-align: center;
+    padding-top: 2em;
+}
+
+.dog {
+    width: 50%;
+    align-self: center;
+}
+
+.lista-item-container  {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 3em 0em 3em;
+}
+
+.lista-item-container div {
+    display: flex;
+    gap: 8px;
+}
+
+.input-checkbox {
+    display: none;
+}
+
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--preto);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.checked {
+    background-color: var(--branco);
+    position: relative;
+}
+
+.checkbox-customizado.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+
+    border-top: 5px solid var(--verde);
+    border-left: 5px solid var(--verde);
+
+    transform: rotate(-140deg);
+}
+
+.item-lista {
+    display: flex;
+    font-family: var(--fonte-titulo);
+    line-height: 35px;
+    gap: 5px;
+    margin: 0 2em;
+    font-size: 25px;
+}
+
+.titulo-comprados {
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-weight: 200;
+    padding-top: 2em;
+}
+
+.item-lista-button {
+    border: none;
+    background-color: transparent;
+}
+
+.texto-data {
+    font-size: 12px;
+    font-family: var(--fonte-titulo);
+    margin-left: 4em;
+}
+
+.container-lista {
+    width: 100%;
+}

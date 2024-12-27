@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="carrinho" src="imgs/carrinho de compras.svg" alt="carrinho de compras">
+    <div class="card">
+        <h1 class="titulo">Lista de Compras</h1>
+
+        <form>
+            <input type="text" name="lista-itens" id="lista-itens" placeholder="Digite o nome do item"></input>
+            <button class="botao-adicionar" id="botao-adicionar">Adicionar</button>
+        </form>
+
+    </div>
+
+    <div class="container-lista">
+        <h2 class="titulo adicionados">Itens adicionados</h2>
+        <hr>
+    
+            <ul id="lista-adicionados">
+                <p class="mensagem-vazia">Sua lista está vazia.</p>
+                <img class="dog" src="imgs/Doguinho dormindo.png" alt="Cachorro dormindo desenho">
+            </ul>
+
+            <div id="container-lista-comprados">
+                <h2 class="titulo-comprados">Comprados</h2>
+                <hr />
+                <ul id="lista-comprados">
+
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        
+        <script type="module" src="scripts.js"></script>
+</body>
+</html>
