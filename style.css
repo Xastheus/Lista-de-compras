@@ -104,6 +104,7 @@ input {
     font-family: var(--fonte-titulo);
     display: flex;
     gap: 8px;
+    list-style-type: none;
 }
 
 .input-checkbox {
