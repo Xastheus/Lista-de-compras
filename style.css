@@ -98,13 +98,13 @@ input {
     display: flex;
     justify-content: space-between;
     margin: 3em 3em 0em 3em;
+    list-style-type: none;
 }
 
 .lista-item-container div {
     font-family: var(--fonte-titulo);
     display: flex;
     gap: 8px;
-    list-style-type: none;
 }
 
 .input-checkbox {
@@ -159,4 +159,8 @@ input {
 
 .container-lista {
     width: 100%;
+}
+
+.container-lista-comprados {
+    list-style-type: none;
 }
