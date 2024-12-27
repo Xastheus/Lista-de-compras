@@ -18,10 +18,8 @@
 }
 
 .carrinho {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
     width: 50%;
+    margin: 0 6em;
 }
 
 .card { 
